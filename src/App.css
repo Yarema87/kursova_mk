@@ -1,0 +1,172 @@
+.App {
+  text-align: center;
+}
+
+.header{
+  height: 60px;
+  background-color: #0b0e4f;
+  text-align: center;
+}
+
+#header_text{
+  color: aliceblue;
+}
+
+.main_part{
+  min-height: 600px;
+  max-height: 900px;
+  width: 650px;
+  border: 2px solid black;
+  display: inline-block;
+  margin-right: 26px;
+  margin-bottom: 0px;
+  background-color: whitesmoke;
+}
+
+.footer{
+  height: 60px;
+  background-color: #0b0e4f;
+  text-align: center;
+  color: aliceblue;
+  margin-top: -22px;
+}
+
+.footer_text{
+  margin-bottom: -20px;
+}
+
+.home_main{
+  background-color: #1853fa;
+  padding-left: 69px;
+  text-align: center;
+}
+
+input{
+  height: 40px;
+  width: 150px;
+  margin: 20px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+button{
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: aliceblue;
+  height: 50px;
+  width: 155px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.type_text{
+  margin-left: 10px;
+}
+
+#alarm{
+  margin-bottom: -30px;
+}
+
+#clock{
+  margin-bottom: 30px;
+}
+
+.main_span{
+  min-height: 210px;
+  max-height: 340px;
+  width: 600px;
+}
+
+.hidden{
+  display: none;
+}
+
+li{
+  list-style: none;
+  display: inline-block;
+}
+
+.saved_alarms{
+  display: inline;
+}
+
+ul{
+  display: inline-block;
+  margin-block-end: 0%;
+  margin-inline-end: 0%;
+}
+
+.nav-button{
+  display: inline-block;
+}
+
+button.nav-button {
+  margin-right: 0px;
+}
+
+.stopwatch_time {
+  display: inline-block; 
+  width: 45%; 
+  margin: 10px; 
+  padding: 10px; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  text-align: center;
+  margin-left: 170px;
+}
+
+
+nav{
+  text-align: center;
+  background-color: #1243f5;
+  color: whitesmoke;
+  margin-top: -20px;
+}
+
+.saved_timers{
+  display: inline-block;
+}
+
+.UTC{
+  height: 40px;
+}
+
+#nav_buttons{
+  margin-left: 24px;
+}
+
+.buttons{
+  display: inline-block;
+  text-align: center;
+}
+
+#middle{
+  display: block;
+}
+
+@media(max-width: 750px){
+  .home_main{
+    width: 100%;
+    padding-left: 0px;
+  }
+  .header{
+    width: 100%;
+  }
+  nav{
+    width: 100%;
+  }
+  .main_part{
+    width: 90%;
+    margin-left: 3%;
+  }
+  .saved-alarms{
+    margin-bottom: 40px;
+    margin-right: 5%;
+  }
+  .saved-timers{
+    margin-bottom: 40px;
+    margin-right: 5%;
+  }
+}
