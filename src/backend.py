@@ -5,7 +5,6 @@ from datetime import datetime
 import pytz
 import time
 import serial
-import serial.tools.list_ports
 
 app = Flask(__name__)
 CORS(app, resources={r"/clock/*": {"origins": "http://localhost:3000"}})
@@ -390,16 +389,6 @@ def choose_timer_mode():
     return jsonify({'message': 'Timer successfully chosen'}), 200
 
 if __name__ == '__main__':
-    ports = list(serial.tools.list_ports.comports())
-
-    if not ports:
-        print("No serial ports found")
-    else:
-        print("Available ports:")
-        for port, desc, hwid in ports:
-            print(f"{port} ({desc}) - {hwid}")
-        print("my port")
-        print(arduinoData.name)
     app.secret_key = 'secret key'
     app.config['SESSION_TYPE'] = 'redis'
     app.app_context().push()
